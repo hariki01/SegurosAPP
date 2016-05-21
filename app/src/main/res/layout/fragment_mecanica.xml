@@ -4,7 +4,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
 
-    tools:context="com.eda.administrador.seguro.MecanicaFragment">
+    tools:context="com.eda.administrador.seguro.MecanicaFragment"
+    android:weightSum="1">
 
     <TextView
         android:id="@+id/txtMecanica"
@@ -12,5 +13,49 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/mechanical" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/lblUbicacion" />
+
+    <EditText
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtUbicacion" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/lblVehiculos" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="123dp"
+        android:id="@+id/listView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Comentario :"
+        android:id="@+id/lblComentario" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/txtComentario" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:id="@+id/btnEnviar"
+        android:layout_gravity="center_horizontal" />
 
 </LinearLayout>
