@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DHI V.1.0</string>
+    <string name="welcome">Bienvenido</string>
+
+    <string name="user">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="login">Ingresar</string>
+
+    <string name="battery">Problemas con Bateria</string>
+    <string name="tire">Problemas con la Llanta</string>
+    <string name="mechanical">Reparacion Mecanica</string>
+
+    <!-- Menu Principal-->
+    <string name="title_activity_principal">SEGURO (DHI V.1.0)</string>
+
+</resources>
