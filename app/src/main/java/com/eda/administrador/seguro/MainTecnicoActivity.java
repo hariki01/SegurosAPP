@@ -85,23 +85,15 @@ public class MainTecnicoActivity extends AppCompatActivity
         Fragment fragment = null;
 
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
+        if (id == R.id.nav_solicitudes) {
 
-            fragment = new LlantaFragment();
+            fragment = new ListaSolicitudTecnicoFragment();
             FragmentTransaction = true;
 
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.nav_checkin) {
 
-            fragment = new MecanicaFragment();
+            fragment = new CheckInTecnicoFragment();
             FragmentTransaction = true;
-
-        } else if (id == R.id.nav_slideshow) {
-
-            fragment = new BateriaFragment();
-            FragmentTransaction = true;
-
-        } else if (id == R.id.nav_manage) {
 
         }
 
