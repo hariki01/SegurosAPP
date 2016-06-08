@@ -8,9 +8,18 @@
     <string name="password">Contraseña</string>
     <string name="login">Ingresar</string>
 
-    <string name="battery">Problemas con Bateria</string>
-    <string name="tire">Problemas con la Llanta</string>
-    <string name="mechanical">Reparacion Mecanica</string>
+    <string name="battery">PROBLEMAS CON BATERIA</string>
+    <string name="location">Ubicacion</string>
+    <string name="reason">Motivo</string>
+    <string name="vehicle">Vehiculo</string>
+    <string name="comment">Comentario</string>
+    <string name="picture">Foto</string>
+    <string name="camare">Camara</string>
+    <string name="submit">Enviar</string>
+
+    <string name="tire">PROBLEMAS CON LA LLANTA</string>
+
+    <string name="mechanical">SOLICITUD REPARACION MECANICA</string>
 
     <!-- Menu Principal-->
     <string name="title_activity_principal">SEGURO (DHI V.1.0)</string>

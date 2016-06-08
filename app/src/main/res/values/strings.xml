@@ -8,13 +8,25 @@
     <string name="password">Password</string>
     <string name="login">Log In</string>
 
-    <string name="battery">Battery Problems</string>
-    <string name="tire">Tire Problems</string>
-    <string name="mechanical">Mechanical Repair</string>
+    <string name="battery">BATTERY PROBLEMS</string>
+    <string name="location">Location</string>
+    <string name="reason">Reason</string>
+    <string name="vehicle">Vehicle</string>
+    <string name="comment">Comment</string>
+    <string name="picture">Picture</string>
+    <string name="camare">Camare</string>
+    <string name="submit">Submit</string>
+
+    <string name="tire">TIRE PROBLEMS</string>
+
+    <string name="mechanical">MECHANICAL REPAIR</string>
 
     <!-- Menu Principal-->
     <string name="title_activity_principal">INSURANCE (DHI V.1.0)</string>
+    <string name="title_activity_main2">INSURANCE (DHI V.1.0)</string>
 
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 
 
 </resources>

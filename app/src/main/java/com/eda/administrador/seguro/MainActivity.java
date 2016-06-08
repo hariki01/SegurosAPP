@@ -142,13 +142,15 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     }
 
     private void OpenPrincipalActivity() {
-        //Intent intent = new Intent(MainActivity.this, PrincipalActivity.class);
-        //startActivity(intent);
+        Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+        startActivity(intent);
 
+        /*
         Intent intent = new Intent(MainActivity.this, PrincipalActivity.class);
         intent.putExtra(PrincipalActivity.EXTRA_CODIGO_USUARIO, obeSeguridad.getUsuaCodigo().toString());
         //startActivityForResult(intent,REQUEST_CODE);
         startActivity(intent);
+        */
     }
 
 }

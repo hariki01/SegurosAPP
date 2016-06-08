@@ -4,8 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
 
-    tools:context="com.eda.administrador.seguro.BateriaFragment"
-    android:weightSum="1">
+    tools:context="com.eda.administrador.seguro.BateriaFragment">
 
     <TextView
         android:id="@+id/txtBateria"
@@ -13,57 +12,5 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/battery" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Ubicacion :"
-        android:id="@+id/lblUbicacion" />
-
-    <EditText
-        android:layout_width="336dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtUbicacion" />
-
-    <ImageView
-        android:layout_width="30dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView"
-        android:layout_gravity="right"
-        android:layout_weight="0.16" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Vehiculos"
-        android:id="@+id/lblVehiculos" />
-
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="124dp"
-        android:id="@+id/listView" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Comentario :"
-        android:id="@+id/lblComentario" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textMultiLine"
-        android:ems="10"
-        android:id="@+id/editText" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Enviar"
-        android:id="@+id/cmdEnviar"
-        android:layout_gravity="center_horizontal" />
 
 </LinearLayout>

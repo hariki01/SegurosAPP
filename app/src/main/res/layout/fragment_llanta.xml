@@ -13,48 +13,4 @@
         android:gravity="center"
         android:text="@string/tire" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Ubicacion"
-        android:id="@+id/lblUbicacion" />
-
-    <EditText
-        android:layout_width="321dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtUbicacion" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Vehiculos"
-        android:id="@+id/lblVehiculos" />
-
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="133dp"
-        android:id="@+id/listView2" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Comentario :"
-        android:id="@+id/lblComentario" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textMultiLine"
-        android:ems="10"
-        android:id="@+id/txtComentario" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Enviar"
-        android:id="@+id/cmdEnviar"
-        android:layout_gravity="center_horizontal" />
-
 </LinearLayout>

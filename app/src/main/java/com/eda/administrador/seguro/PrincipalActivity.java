@@ -29,7 +29,7 @@ public class PrincipalActivity extends ActionBarActivity implements AdapterView.
     private ActionBarDrawerToggle mToggle;
 
     private static final String[] OPTIONS = {
-            "Problemas con la lLanta", "Reparacion Mecanica", "Problemas con bateria", "Cerrar Sesion"
+            "Problemas con la LLanta", "Reparacion Mecanica", "Problemas con bateria", "Cerrar Sesion"
     };
 
     @Override

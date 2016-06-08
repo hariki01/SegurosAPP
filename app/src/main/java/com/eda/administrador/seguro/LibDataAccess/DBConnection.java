@@ -13,11 +13,11 @@ import java.sql.SQLException;
  */
 public class DBConnection {
 
-    String SERVER = "192.168.1.39";
+    String SERVER = "172.19.133.8";
     String CLASS = "net.sourceforge.jtds.jdbc.Driver";
     String DATABASE = "SEGUROS";
     String USER = "sa";
-    String PASS = "123456";
+    String PASS = "JORVIL";
 
     @SuppressLint("NewApi")
     public Connection conn(){
