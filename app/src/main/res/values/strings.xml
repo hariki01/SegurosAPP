@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">DHI V.1.0</string>
+    <string name="app_name">DHI Siniestros</string>
 
     <string name="welcome">Welcome</string>
     <string name="action_settings">Settings</string>
@@ -22,8 +22,8 @@
     <string name="mechanical">MECHANICAL REPAIR</string>
 
     <!-- Menu Principal-->
-    <string name="title_activity_principal">INSURANCE (DHI V.1.0)</string>
-    <string name="title_activity_main2">INSURANCE (DHI V.1.0)</string>
+    <string name="title_activity_principal">INSURANCE (DHI Siniestros)</string>
+    <string name="title_activity_main2">INSURANCE (DHI Siniestros)</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">DHI V.1.0</string>
+    <string name="app_name">DHI Siniestros</string>
     <string name="welcome">Bienvenido</string>
 
     <string name="user">Usuario</string>
@@ -22,6 +22,6 @@
     <string name="mechanical">SOLICITUD REPARACION MECANICA</string>
 
     <!-- Menu Principal-->
-    <string name="title_activity_principal">SEGURO (DHI V.1.0)</string>
+    <string name="title_activity_principal">SEGURO (DHI Siniestros)</string>
 
 </resources>
