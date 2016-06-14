@@ -1,5 +1,6 @@
 package com.eda.administrador.seguro;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -111,6 +112,10 @@ public class Main2Activity extends AppCompatActivity
             f = getFragment(2);
 
         } else if (id == R.id.nav_manage) {
+
+            Intent intent = new Intent(Main2Activity.this, MainActivity.class);
+            intent.putExtra(Main2Activity.EXTRA_CODIGO_USUARIO, "Cliente");
+            startActivity(intent);
 
         } else if (id == R.id.nav_share) {
 

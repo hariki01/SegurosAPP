@@ -1,5 +1,6 @@
 package com.eda.administrador.seguro;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -42,8 +43,6 @@ public class MainTecnicoActivity extends AppCompatActivity
 
             }
         });
-
-        searchRequest();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -107,6 +106,12 @@ public class MainTecnicoActivity extends AppCompatActivity
             fragment = new CheckInTecnicoFragment();
             FragmentTransaction = true;
 
+        }else if (id == R.id.nav_manage) {
+
+            Intent intent = new Intent(MainTecnicoActivity.this, MainActivity.class);
+            intent.putExtra(Main2Activity.EXTRA_CODIGO_USUARIO, "Cliente");
+            startActivity(intent);
+
         }
 
         if(FragmentTransaction) {
@@ -125,33 +130,7 @@ public class MainTecnicoActivity extends AppCompatActivity
     }
 
 
-    public void searchRequest() {
-        String url = "http://172.16.11.235/WsCleosInstant/user/get?site=uno";
 
-        JsonObjectRequest jsonRequest = new JsonObjectRequest
-                (Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
-                    @Override
-                    public void onResponse(JSONObject response) {
-                        // the response is already constructed as a JSONObject!
-                        try {
-                            //response = response.getJSONObject("args");
-                            String site = response.getString("status"),
-                                    network = response.getString("msg");
-                            System.out.println("Site: "+site+"\nNetwork: "+network);
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                }, new Response.ErrorListener() {
-
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        error.printStackTrace();
-                    }
-                });
-
-        Volley.newRequestQueue(this).add(jsonRequest);
-    }
 
 
 }
