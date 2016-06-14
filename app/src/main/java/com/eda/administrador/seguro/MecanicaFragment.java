@@ -211,6 +211,7 @@ public class MecanicaFragment extends Fragment implements View.OnClickListener, 
                 bmpCamara = (Bitmap) ext.get("data");
                 imgCamara.setImageBitmap(bmpCamara);
 
+
                 // CALL THIS METHOD TO GET THE URI FROM THE BITMAP
                 Uri tempUri = getImageUri(getContext(), bmpCamara);
 

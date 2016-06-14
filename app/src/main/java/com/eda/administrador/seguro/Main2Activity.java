@@ -138,7 +138,8 @@ public class Main2Activity extends AppCompatActivity
 
         switch (position) {
             case 0:
-                f = LlantaFragment.newInstance(CodigoUsuario);
+                //f = LlantaFragment.newInstance(CodigoUsuario);
+                f = MecanicaFragment.newInstance(CodigoUsuario,CodigoTipo);
                 break;
 
             case 1:
@@ -146,7 +147,8 @@ public class Main2Activity extends AppCompatActivity
                 break;
 
             case 2:
-                f = BateriaFragment.newInstance(CodigoUsuario);
+                //f = BateriaFragment.newInstance(CodigoUsuario);
+                f = MecanicaFragment.newInstance(CodigoUsuario,CodigoTipo);
                 break;
         }
 
