@@ -7,7 +7,7 @@
         <item name="colorAccent">@color/orange</item>
 
         <item name="android:navigationBarColor">@color/orange</item>
-        <item name="android:windowBackground">@drawable/fondo.png</item>
+
 
     </style>
 </resources>
