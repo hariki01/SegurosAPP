@@ -1,18 +1,22 @@
 <resources>
-    <string name="app_name">DHI Siniestros</string>
+    <string name="app_name">DHI</string>
 
     <string name="welcome">Welcome</string>
     <string name="action_settings">Settings</string>
 
     <string name="user">User</string>
     <string name="password">Password</string>
+
     <string name="login">Log In</string>
+    <string name="save">Save</string>
+    <string name="confirm">Confirm</string>
 
     <string name="battery">BATTERY PROBLEMS</string>
     <string name="location">Location</string>
     <string name="reason">Reason</string>
     <string name="vehicle">Vehicle</string>
     <string name="comment">Comment</string>
+    <string name="color">Color</string>
     <string name="picture">Picture</string>
     <string name="camare">Camare</string>
     <string name="submit">Submit</string>
@@ -22,11 +26,14 @@
     <string name="mechanical">MECHANICAL REPAIR</string>
 
     <!-- Menu Principal-->
-    <string name="title_activity_principal">INSURANCE (DHI Siniestros)</string>
-    <string name="title_activity_main2">INSURANCE (DHI Siniestros)</string>
+    <string name="title_activity_principal">DHI</string>
+    <string name="title_activity_main2">DHI</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
