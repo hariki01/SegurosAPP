@@ -6,6 +6,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
 /**
  * A simple {@link Fragment} subclass.
  */
@@ -21,6 +30,11 @@ public class ListaSolicitudTecnicoFragment extends Fragment {
         Bundle args = new Bundle();
         args.putString(ARG_CODIGO_USUARIO, Usuario);
         fragment.setArguments(args);
+
+
+
+
+
         return fragment;
     }
 
@@ -40,6 +54,8 @@ public class ListaSolicitudTecnicoFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_listado_tecnico, container, false);
     }
+
+
 
 
 }

@@ -86,6 +86,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         int Validar = 1;
         String Mensaje = "...";
 
+            /*
         try {
             obeSeguridad = obrSeguridad.Login(usuario.trim(), clave.trim());
             if (obeSeguridad == null) {
@@ -117,8 +118,9 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
             Validar = -1;
             Mensaje = "Exceptions / MainActivity : " + ex.getMessage();
             Toast.makeText(this, Mensaje, Toast.LENGTH_LONG).show();
-        }
+        } */
 
+        OpenPrincipalActivity();
         return Validar;
     }
 
@@ -142,7 +144,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     }
 
     private void OpenPrincipalActivity() {
-        Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+        Intent intent = new Intent(MainActivity.this, MainTecnicoActivity.class);
         startActivity(intent);
 
         /*
