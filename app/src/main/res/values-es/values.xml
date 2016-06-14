@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">DHI Siniestros</string>
+    <string name="app_name">DHI</string>
     <string name="welcome">Bienvenido</string>
 
     <string name="user">Usuario</string>
     <string name="password">Contraseña</string>
+
     <string name="login">Ingresar</string>
+    <string name="save">Grabar</string>
+    <string name="confirm">Confirmar</string>
 
     <string name="battery">PROBLEMAS CON BATERIA</string>
     <string name="location">Ubicacion</string>
     <string name="reason">Motivo</string>
     <string name="vehicle">Vehiculo</string>
     <string name="comment">Comentario</string>
+    <string name="color">Color</string>
     <string name="picture">Foto</string>
     <string name="camare">Camara</string>
     <string name="submit">Enviar</string>
@@ -22,6 +26,6 @@
     <string name="mechanical">SOLICITUD REPARACION MECANICA</string>
 
     <!-- Menu Principal-->
-    <string name="title_activity_principal">SEGURO (DHI Siniestros)</string>
+    <string name="title_activity_principal">DHI</string>
 
 </resources>
