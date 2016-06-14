@@ -2,10 +2,11 @@ package com.eda.administrador.seguro;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
-import android.view.View;
-import android.support.design.widget.NavigationView;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -13,13 +14,22 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class Main2Activity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    public static final String EXTRA_CODIGO_USUARIO = "0000";
+    private String CodigoUsuario = "0000";
+    private String CodigoTipo = "0";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        CodigoUsuario = getIntent().getStringExtra(EXTRA_CODIGO_USUARIO);
+
+
         setContentView(R.layout.activity_main2);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -81,25 +91,24 @@ public class Main2Activity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        boolean FragmentTransaction = false;
-        Fragment fragment = null;
+        Fragment f;
 
+        f = null;
 
         if (id == R.id.nav_camera) {
             // Handle the camera action
-
-            fragment = new LlantaFragment();
-            FragmentTransaction = true;
+            CodigoTipo = "1";
+            f = getFragment(0);
 
         } else if (id == R.id.nav_gallery) {
 
-            fragment = new MecanicaFragment();
-            FragmentTransaction = true;
+            CodigoTipo = "2";
+            f = getFragment(1);
 
         } else if (id == R.id.nav_slideshow) {
 
-            fragment = new BateriaFragment();
-            FragmentTransaction = true;
+            CodigoTipo = "3";
+            f = getFragment(2);
 
         } else if (id == R.id.nav_manage) {
 
@@ -109,18 +118,39 @@ public class Main2Activity extends AppCompatActivity
 
         }
 
-        if(FragmentTransaction) {
-            getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.content_main, fragment)
-                    .commit();
+        if (f != null) {
+            FragmentManager fm = getSupportFragmentManager();
+            FragmentTransaction ft = fm.beginTransaction();
+            ft.replace(R.id.content_main, f);
+            ft.commit();
 
             item.setChecked(true);
             getSupportActionBar().setTitle(item.getTitle());
-
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+    private Fragment getFragment(int position) {
+        Fragment f = null;
+
+        switch (position) {
+            case 0:
+                f = LlantaFragment.newInstance(CodigoUsuario);
+                break;
+
+            case 1:
+                f = MecanicaFragment.newInstance(CodigoUsuario,CodigoTipo);
+                break;
+
+            case 2:
+                f = BateriaFragment.newInstance(CodigoUsuario);
+                break;
+        }
+
+        return f;
+    }
+
 }
