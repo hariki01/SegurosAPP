@@ -1,14 +1,13 @@
 package com.eda.administrador.seguro;
 
 
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
-import android.os.Bundle;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -104,7 +103,7 @@ public class PrincipalActivity extends ActionBarActivity implements AdapterView.
                 break;
 
             case 1:
-                f =  MecanicaFragment.newInstance(CodigoUsuario);
+                f =  MecanicaFragment.newInstance(CodigoUsuario,"");
                 break;
 
             case 2:

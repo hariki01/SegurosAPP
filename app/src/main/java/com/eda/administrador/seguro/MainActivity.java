@@ -86,6 +86,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         int Validar = 1;
         String Mensaje = "...";
 
+
         try {
             obeSeguridad = obrSeguridad.Login(usuario.trim(), clave.trim());
             if (obeSeguridad == null) {
@@ -142,7 +143,12 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     }
 
     private void OpenPrincipalActivity() {
+         /*
         Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+        startActivity(intent);
+        */
+        Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+        intent.putExtra(Main2Activity.EXTRA_CODIGO_USUARIO, obeSeguridad.getUsuaCodigo().toString());
         startActivity(intent);
 
         /*
