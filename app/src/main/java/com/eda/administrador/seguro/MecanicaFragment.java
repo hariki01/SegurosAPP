@@ -454,4 +454,41 @@ public class MecanicaFragment extends Fragment implements View.OnClickListener, 
     public void onNothingSelected(AdapterView<?> parent) {
 
     }
+
+/*
+
+2.- ingresar a la cuenta de google console
+https://console.developers.google.com/project
+
+2.1.- crear un proyecto (nombre)
+      apis y autenticacion
+      Seleccionar - APIs de Google Maps
+      Habilitar
+2.2.- credenciales
+2.2.- crear clave
+2.3.- clave android
+
+3.- ejecutar el cmd
+3.1.- pegar la ubicacion de java bin
+      C:\Program Files\Java\jdk1.8.0_40\bin
+3.2.- dentro de ahi pegar la ruta
+      keytool -list -v -keystore "C:\Users\Administrador\.android\debug.keystore"
+      clave : android
+      copiar el codigo del "SHA1"
+      Pegarlo en el cuenta de la web de google
+      luego colocar ";" y el nombre del paquete que esta abajo
+      pe.edu.cibertec.clase8 (applicationId)
+3.3.- copiar la clave generada
+3.1.- ingresar al ANDROIDMANIFEST y crear etiquetas
+
+    <meta-data
+        android:name = "com.google.android.gms.version"
+        android:value = "@integer/google_play_services_version"/>
+
+    <meta-data
+        android:name = "com.google.android.maps.v2.API_KEY"
+        android:value = "AIzaSyCYTUVEQZpDC7NQwVon9gGtFAYpI4M1c40"/>
+
+*/
+
 }
