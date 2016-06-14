@@ -12,7 +12,7 @@ import java.sql.SQLException;
  */
 public class brSolicitud {
 
-    public beSolicitud Insertar(String Usuario, String Marca, String Color, String Auxilio, int Latitud, int Longitud, String Ruta) throws SQLException {
+    public beSolicitud Insertar(String Usuario, String Marca, String Color, String Auxilio, double Latitud, double Longitud, String Comentario, String Ruta) throws SQLException {
 
         int Validar = 1;
         String Ref_Mensaje = "...";
@@ -29,7 +29,7 @@ public class brSolicitud {
             conn = dbConnection.conn();
             conn.setAutoCommit(false);
 
-            obeSolicitud = odaSolicitud.Insertar(conn, Usuario, Marca, Color, Auxilio, Latitud, Longitud, Ruta);
+            obeSolicitud = odaSolicitud.Insertar(conn, Usuario, Marca, Color, Auxilio, Latitud, Longitud, Comentario, Ruta);
 
             Validar = obeSolicitud.getValidar();
 

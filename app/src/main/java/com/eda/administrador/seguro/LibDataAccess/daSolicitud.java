@@ -12,7 +12,7 @@ import java.sql.PreparedStatement;
  */
 public class daSolicitud {
 
-    public beSolicitud Insertar(Connection conn, String Usuario, String Marca, String Color, String Auxilio, int Latitud, int Longitud, String Ruta) {
+    public beSolicitud Insertar(Connection conn, String Usuario, String Marca, String Color, String Auxilio, double Latitud, double Longitud, String Comentario, String Ruta) {
 
         beSolicitud obeSolicitud = null;
 
@@ -23,7 +23,7 @@ public class daSolicitud {
 
         String SqlInsert;
 
-        SqlInsert = "insert into dhiSolicitud(codCliente,codMarca,codColor,codAuxilio,latitud,longitud,foto) values(?,?,?,?,?,?,?)";
+        SqlInsert = "insert into dhiSolicitud(codCliente,codMarca,codColor,codAuxilio,latitud,longitud,comentario,foto) values(?,?,?,?,?,?,?,?)";
         FileInputStream fis = null;
         PreparedStatement preparedStatement = null;
 
@@ -44,9 +44,10 @@ public class daSolicitud {
                 preparedStatement.setInt(2,Integer.parseInt(Marca));
                 preparedStatement.setInt(3,Integer.parseInt(Color));
                 preparedStatement.setInt(4,Integer.parseInt(Auxilio));
-                preparedStatement.setInt(5,Latitud);
-                preparedStatement.setInt(6,Longitud);
-                preparedStatement.setBinaryStream(7,fis,(int)file.length());
+                preparedStatement.setDouble(5,Latitud);
+                preparedStatement.setDouble(6,Longitud);
+                preparedStatement.setString(7,Comentario);
+                preparedStatement.setBinaryStream(8,fis,(int)file.length());
 
                 isSuccess = preparedStatement.executeUpdate();
 
